@@ -1,0 +1,1172 @@
+{
+  "brands": [
+    {
+      "name": "adidas",
+      "brand_icon": "assets/icon/adidas_logo.png",
+      "models": [
+        {
+          "name": "F50_Elite_Firm_Ground",
+          "image": "assets/adidas/F50_Elite_Firm_Ground.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Профессиональные футбольные бутсы с инновационной подошвой для твердых покрытий. Легкий верх обеспечивает отличный контроль мяча и максимальную скорость на поле."
+        },
+        {
+          "name": "Forum_Mid_crystal_white",
+          "image": "assets/adidas/Forum_Mid_crystal_white.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Классические высокие кроссовки в белоснежном исполнении. Вдохновлены баскетбольным наследием 80-х годов, сочетают винтажный стиль с современным комфортом."
+        },
+        {
+          "name": "Forum_Mid_mesa",
+          "image": "assets/adidas/Forum_Mid_mesa.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Стильные кроссовки средней высоты в бежевой цветовой гамме. Премиум материалы и ретро-дизайн делают их универсальными для повседневной носки."
+        },
+        {
+          "name": "Predator_Club_Firm_Multi-Ground",
+          "image": "assets/adidas/Predator_Club_Firm_Multi-Ground.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Универсальные футбольные бутсы серии Predator для игры на различных типах покрытий. Текстурированный верх улучшает контроль и вращение мяча."
+        },
+        {
+          "name": "Predator_League_Jude_Belingham_Fold-Over_Tongue_Firm_Multi_Ground",
+          "image": "assets/adidas/Predator_League_Jude_Belingham_Fold-Over_Tongue_Firm_Multi_Ground.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Лимитированная коллекция в честь Джуда Беллингема. Уникальный дизайн с откидным язычком и превосходной фиксацией стопы для профессиональной игры."
+        },
+        {
+          "name": "Superstar_Bellingham",
+          "image": "assets/adidas/Superstar_Bellingham.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Специальная версия легендарных Superstar, посвященная Джуду Беллингему. Классическая форма с резиновым мыском Shell Toe и премиум отделкой."
+        },
+        {
+          "name": "Superstar_classic",
+          "image": "assets/adidas/Superstar_classic.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Культовые кроссовки Superstar в классическом бело-черном исполнении. Иконический дизайн, узнаваемый во всем мире, идеален для любого стиля."
+        },
+        {
+          "name": "Superstar_II_cloud_white",
+          "image": "assets/adidas/Superstar_II_cloud_white.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Обновленная версия Superstar в нежном белом цвете. Улучшенная посадка и мягкая подкладка обеспечивают комфорт в течение всего дня."
+        },
+        {
+          "name": "Superstar_II_core_black",
+          "image": "assets/adidas/Superstar_II_core_black.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Стильная черная версия Superstar II. Монохромный дизайн с контрастными деталями, универсальные кроссовки для создания современного образа."
+        },
+        {
+          "name": "Superstar_II_core_white",
+          "image": "assets/adidas/Superstar_II_core_white.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Чистый белоснежный вариант Superstar II. Минималистичный дизайн и качественная кожа делают эту модель must-have в любом гардеробе."
+        },
+        {
+          "name": "Superstar_y3",
+          "image": "assets/adidas/Superstar_y3.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Коллаборация adidas и Y-3 Йоджи Ямамото. Авангардный дизайн сочетает спортивную функциональность с элементами высокой моды."
+        },
+        {
+          "name": "Ultraboost_1",
+          "image": "assets/adidas/Ultraboost_1.png",
+          "price": 150,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Революционные беговые кроссовки с технологией Boost для максимального возврата энергии. Primeknit верх адаптируется к форме стопы для идеальной посадки."
+        }
+      ]
+    },
+    {
+      "name": "bape",
+      "brand_icon": "assets/icon/bape_logo.jpg",
+      "models": [
+        {
+          "name": "BAPE_Clutch_STA_30th_Anniv",
+          "image": "assets/bape/BAPE_Clutch_STA_30th_Anniv.png",
+          "price": 350,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Юбилейная модель в честь 30-летия BAPE. Лимитированный выпуск с эксклюзивными деталями и премиум материалами, коллекционная ценность."
+        },
+        {
+          "name": "BAPE_SK8_STA_6",
+          "image": "assets/bape/BAPE_SK8_STA_6.png",
+          "price": 300,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Культовые скейтбордические кроссовки BAPE с узнаваемой звездой. Яркий streetwear дизайн и качественное исполнение для настоящих ценителей."
+        },
+        {
+          "name": "BAPE_X_88rising_BAPE_STA_02_M2",
+          "image": "assets/bape/BAPE_X_88rising_BAPE_STA_02_M2.png",
+          "price": 320,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Эксклюзивная коллаборация BAPE и музыкального лейбла 88rising. Уникальный дизайн, объединяющий японский стритвер и азиатскую хип-хоп культуру."
+        },
+        {
+          "name": "SK8_STA_4_M1",
+          "image": "assets/bape/SK8_STA_4_M1.png",
+          "price": 250,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Оригинальные кроссовки SK8 STA с классической расцветкой BAPE. Прочная конструкция и эффектный дизайн для любителей японского стритвера."
+        }
+      ]
+    },
+    {
+      "name": "converse",
+      "brand_icon": "assets/icon/Converse_logo.png",
+      "models": [
+        {
+          "name": "Cdg_X_Chuck_Taylor_70_Hi_sneakers",
+          "image": "assets/converse/Cdg_X_Chuck_Taylor_70_Hi_sneakers.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Коллаборация Converse и Comme des Garçons. Культовые Chuck Taylor 70 с узнаваемым логотипом CDG PLAY — символ минимализма и стиля."
+        },
+        {
+          "name": "Chuck_70_De_Luxe_pointed_toe_sneakers",
+          "image": "assets/converse/Chuck_70_De_Luxe_pointed_toe_sneakers.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Премиум версия Chuck 70 с заостренным носком. Роскошные материалы и элегантный силуэт для создания утонченного образа."
+        },
+        {
+          "name": "Chuck_70_High_Black_sneakers",
+          "image": "assets/converse/Chuck_70_High_Black_sneakers.png",
+          "price": 95,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Высокие черные кеды Chuck 70 — вневременная классика. Улучшенная подошва и винтажная отделка для максимального комфорта и стиля."
+        },
+        {
+          "name": "Chuck_70_trainer",
+          "image": "assets/converse/Chuck_70_trainer.png",
+          "price": 90,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Универсальные кеды Chuck 70 в низком исполнении. Классический дизайн 1970-х годов с современными улучшениями для повседневной носки."
+        },
+        {
+          "name": "Run_Star_Hike_Hi_Black_White_sneakers",
+          "image": "assets/converse/Run_Star_Hike_Hi_Black_White_sneakers.png",
+          "price": 140,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Экстравагантные кеды с массивной зубчатой подошвой. Смелый дизайн Run Star Hike привлекает внимание и создает уникальный образ."
+        },
+        {
+          "name": "XXHi_lace_up_high_top-sneakers",
+          "image": "assets/converse/XXHi_lace_up_high_top-sneakers.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Высокие кеды с удлиненной шнуровкой. Экспериментальный силуэт и нестандартные пропорции для ценителей авангардного стиля."
+        },
+        {
+          "name": "converse_x_Sailor_Jerry_Chuck_Taylor_All_Star_Tattoo_Grey_Black_sneakers",
+          "image": "assets/converse/converse_x_Sailor_Jerry_Chuck_Taylor_All_Star_Tattoo_Grey_Black_sneakers.png",
+          "price": 130,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Уникальная коллаборация с легендой тату-искусства Sailor Jerry. Принты в стиле олдскульных татуировок делают эту модель по-настоящему эксклюзивной."
+        }
+      ]
+    },
+    {
+      "name": "crocs",
+      "brand_icon": "assets/icon/crocs_logo.png",
+      "models": [
+        {
+          "name": "Classic_Buffalo_Check_Cozzzy_Slipper",
+          "image": "assets/crocs/Classic_Buffalo_Check_Cozzzy_Slipper.png",
+          "price": 60,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Уютные домашние тапочки Crocs с клетчатым принтом. Мягкая подкладка и фирменная технология Croslite обеспечивают максимальный комфорт."
+        },
+        {
+          "name": "Friday_the_13th_Classic_Clog",
+          "image": "assets/crocs/Friday_the_13th_Classic_Clog.png",
+          "price": 55,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Лимитированная коллекция Crocs по мотивам фильма 'Пятница 13-е'. Эксклюзивный дизайн для поклонников культового хоррора."
+        },
+        {
+          "name": "Monsters_Inc_Sulley_Classic_Cozzzy_Sandal",
+          "image": "assets/crocs/Monsters_Inc_Sulley_Classic_Cozzzy_Sandal.png",
+          "price": 65,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Яркие сандалии в стиле Салли из мультфильма 'Корпорация монстров'. Веселый дизайн Disney и невероятный комфорт для всей семьи."
+        },
+        {
+          "name": "Salehe_Bembury_x_Juniper_Sneaker",
+          "image": "assets/crocs/Salehe_Bembury_x_Juniper_Sneaker.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Инновационная коллаборация с дизайнером Salehe Bembury. Футуристичный дизайн с уникальной текстурой, мгновенно ставший культовым."
+        }
+      ]
+    },
+    {
+      "name": "new_balance",
+      "brand_icon": "assets/icon/New_Balance_logo.png",
+      "models": [
+        {
+          "name": "550",
+          "image": "assets/new_balance/550.png",
+          "price": 100,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Возрожденная баскетбольная классика 80-х годов. Ретро-силуэт New Balance 550 идеально сочетает винтажный стиль и современный комфорт."
+        },
+        {
+          "name": "740",
+          "image": "assets/new_balance/740.png",
+          "price": 140,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Массивные кроссовки New Balance 740 в стиле 90-х. Сочетание замши, сетки и кожи создает многослойный ретро-образ."
+        },
+        {
+          "name": "FuelCell_Rebel_v5",
+          "image": "assets/new_balance/FuelCell_Rebel_v5.png",
+          "price": 130,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Продвинутые беговые кроссовки с технологией FuelCell. Легкая конструкция и отзывчивая амортизация для скоростных тренировок и соревнований."
+        },
+        {
+          "name": "NB_Numeric_440_High_V2",
+          "image": "assets/new_balance/NB_Numeric_440_High_V2.png",
+          "price": 90,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Скейтбординговая модель NB Numeric 440 в высоком исполнении. Прочная конструкция и усиленные зоны износа для интенсивного катания."
+        }
+      ]
+    },
+    {
+      "name": "nike",
+      "brand_icon": "assets/icon/Logo_NIKE.png",
+      "models": [
+        {
+          "name": "Air_Force_1",
+          "image": "assets/nike/Air_Force_1.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Легендарные Nike Air Force 1 — абсолютная классика с 1982 года. Белоснежная кожа, Air-подушка и культовый дизайн для любого случая."
+        },
+        {
+          "name": "Air_Jordan_1_High_OG_TS_SP_Travis_Scott",
+          "image": "assets/nike/Air_Jordan_1_High_OG_TS_SP_Travis_Scott.png",
+          "price": 400,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Хайповая коллаборация с Travis Scott. Реверсивный Swoosh и уникальная расцветка Mocha делают эту модель одной из самых желанных."
+        },
+        {
+          "name": "Air_Jordan_1_Retro_High_OG",
+          "image": "assets/nike/Air_Jordan_1_Retro_High_OG.png",
+          "price": 180,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Оригинальная версия Air Jordan 1 в классической расцветке. Баскетбольная икона, изменившая мир снекеркультуры навсегда."
+        },
+        {
+          "name": "Air_Yeezy_2_NRG",
+          "image": "assets/nike/Air_Yeezy_2_NRG.png",
+          "price": 2500,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Редчайшая коллаборация Nike и Канье Уэста. Коллекционная модель Air Yeezy 2 с инновационным дизайном и текстурированным верхом."
+        },
+        {
+          "name": "Jordan_City",
+          "image": "assets/nike/Jordan_City.png",
+          "price": 130,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Современная интерпретация Jordan для городской жизни. Стильный силуэт и комфортная конструкция для ежедневной носки в мегаполисе."
+        },
+        {
+          "name": "Jumpman_Jack_University_Red_из_коллаборации_с_Travis_Scott_Jordan",
+          "image": "assets/nike/Jumpman_Jack_University_Red_из_коллаборации_с_Travis_Scott_Jordan.png",
+          "price": 200,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Jumpman Jack от Travis Scott в ярко-красном цвете University Red. Инновационный дизайн от Cactus Jack сочетает футуризм и наследие Jordan Brand."
+        },
+        {
+          "name": "Nike_Air_Max_Goadome",
+          "image": "assets/nike/Nike_Air_Max_Goadome.png",
+          "price": 130,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Прочные ботинки Nike ACG Goadome с амортизацией Air. Защита от непогоды и надежное сцепление для городских приключений."
+        },
+        {
+          "name": "Nike_Manoa_Leather",
+          "image": "assets/nike/Nike_Manoa_Leather.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Классические кожаные ботинки Manoa. Водостойкая конструкция и мягкая пенная подошва обеспечивают комфорт в любую погоду."
+        },
+        {
+          "name": "Nike_Mercurial_Superfly_10_Pro_Kylian_Mbappé",
+          "image": "assets/nike/Nike_Mercurial_Superfly_10_Pro_Kylian_Mbappé.png",
+          "price": 220,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Профессиональные бутсы Килиана Мбаппе с технологией Zoom Air. Революционная подошва и ультралегкий верх для максимальной скорости."
+        },
+        {
+          "name": "Nike_Mercurial_Vapor_16_Academy_Kylian Mbappé",
+          "image": "assets/nike/Nike_Mercurial_Vapor_16_Academy_Kylian Mbappé.png",
+          "price": 140,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Бутсы серии Mbappé для начинающих футболистов. Доступная цена и проверенная технология Mercurial для развития скоростных качеств."
+        },
+        {
+          "name": "Nike_Mercurial_Superfly_6_Elite_CR7",
+          "image": "assets/nike/Nike_Mercurial_Superfly_6_Elite_CR7.png",
+          "price": 300,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Элитные бутсы Криштиану Роналду с высоким голенищем. Сигнатурная модель CR7 сочетает агрессивный дизайн и топовые технологии."
+        },
+        {
+          "name": "Nike_Phantom_Luna_2_Elite",
+          "image": "assets/nike/Nike_Phantom_Luna_2_Elite.png",
+          "price": 160,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Современные бутсы Phantom Luna для точных пасов и ударов. Текстурированная зона контакта улучшает вращение и траекторию мяча."
+        },
+        {
+          "name": "Nike_United_Mercurial_Superfly_10_Elite",
+          "image": "assets/nike/Nike_United_Mercurial_Superfly_10_Elite.png",
+          "price": 210,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Лимитированная версия Mercurial в расцветке Manchester United. Для фанатов красных дьяволов — эксклюзивный дизайн и топовая функциональность."
+        },
+        {
+          "name": "Nike_Hypervenom_Phantom_II_Neymar_Jr",
+          "image": "assets/nike/Nike_Hypervenom_Phantom_II_Neymar_Jr.png",
+          "price": 150,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Сигнатурные бутсы Неймара серии Hypervenom. Яркий бразильский дизайн и технология для дриблинга и финтов на высшем уровне."
+        },
+        {
+          "name": "Nike_Hypervenom_Phantom_II_Neymar_x_Jordan_FG",
+          "image": "assets/nike/Nike_Hypervenom_Phantom_II_Neymar_x_Jordan_FG.png",
+          "price": 170,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Уникальная коллаборация Neymar Jr и Jordan Brand. Футбольные бутсы с баскетбольной эстетикой — настоящая редкость для коллекционеров."
+        },
+        {
+          "name": "nike_x_Travis_Scott_Air_Force_1_Low_07_Cactus_Jack_Utopia_Edition_White",
+          "image": "assets/nike/nike_x_Travis_Scott_Air_Force_1_Low_07_Cactus_Jack_Utopia_Edition_White.png",
+          "price": 1200,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Хайповая коллаборация Travis Scott Cactus Jack Utopia Edition. Белоснежная премиум кожа с фирменными деталями Трэвиса — мечта любого снекерхеда."
+        },
+        {
+          "name": "Zoom_Field_Jaxx",
+          "image": "assets/nike/Zoom_Field_Jaxx.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Футуристичные кроссовки Zoom Field Jaxx с массивной подошвой. Смелый дизайн Y2K-эстетики и технология Zoom Air для современного street style."
+        }
+      ]
+    },
+    {
+      "name": "onitsuka_tiger",
+      "brand_icon": "assets/icon/initsuka_tiger_logo.png",
+      "models": [
+        {
+          "name": "HMR_PEAK_G_TX",
+          "image": "assets/onitsuka_tiger/HMR_PEAK_G_TX.png",
+          "price": 120,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Технологичные треккинговые кроссовки с мембраной Gore-Tex. Японское качество и защита от непогоды для городских и природных маршрутов."
+        },
+        {
+          "name": "MEXICO_66_GDX",
+          "image": "assets/onitsuka_tiger/MEXICO_66_GDX.png",
+          "price": 95,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Премиум версия культовых Mexico 66 с улучшенными материалами. Классический ретро-силуэт в современном исполнении для ценителей винтажа."
+        },
+        {
+          "name": "MEXICO_66_SD",
+          "image": "assets/onitsuka_tiger/MEXICO_66_SD.png",
+          "price": 100,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Легендарные кроссовки Mexico 66 в замшевом исполнении. Тонкая подошва и минималистичный дизайн 1966 года остаются актуальными и сегодня."
+        },
+        {
+          "name": "onitsuka_tiger_mexico_66",
+          "image": "assets/onitsuka_tiger/onitsuka_tiger_mexico_66.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Оригинальные Onitsuka Tiger Mexico 66 — символ японского качества. Узнаваемые полоски Tiger Stripes и комфортная посадка для повседневной носки."
+        }
+      ]
+    },
+    {
+      "name": "puma",
+      "brand_icon": "assets/icon/PUMA-Logo-20082.jpg",
+      "models": [
+        {
+          "name": "Amplifier",
+          "image": "assets/puma/Amplifier.png",
+          "price": 90,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Современные кроссовки Puma Amplifier с прогрессивным дизайном. Легкая конструкция и амортизация для активного городского стиля жизни."
+        },
+        {
+          "name": "MB_04_Phoenix",
+          "image": "assets/puma/MB_04_Phoenix.png",
+          "price": 140,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Баскетбольные кроссовки LaMelo Ball четвертого поколения. Яркий дизайн Phoenix и технология NITRO для взрывной игры на паркете."
+        },
+        {
+          "name": "Scoot_Zeros_II_Pink_Pearlz",
+          "image": "assets/puma/Scoot_Zeros_II_Pink_Pearlz.png",
+          "price": 110,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Сигнатурные кроссовки Scoot Henderson в розовой расцветке Pink Pearlz. Стильный баскетбольный дизайн для игры и повседневной носки."
+        },
+        {
+          "name": "Speedcat_OG",
+          "image": "assets/puma/Speedcat_OG.png",
+          "price": 80,
+          "currency": "USD",
+          "price_estimated": true,
+          "sizes": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "description": "Культовые гоночные кроссовки Puma Speedcat в оригинальном исполнении. Низкий силуэт вдохновлен автоспортом и формулой-1 начала 2000-х."
+        }
+      ]
+    }
+  ]
+}

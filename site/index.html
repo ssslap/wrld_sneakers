@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrld sneakers - Премиум кроссовки</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes modalSlideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-dialog {
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(165, 42, 42, 0.3);
+            border-radius: 24px;
+            padding: 0;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.5),
+                0 0 100px rgba(139, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            animation: modalSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .modal-header {
+            padding: 2rem;
+            border-bottom: 1px solid rgba(165, 42, 42, 0.2);
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.1), rgba(165, 42, 42, 0.05));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.75rem;
+            font-weight: 900;
+        }
+
+        .modal-close {
+            background: rgba(165, 42, 42, 0.2);
+            border: 1px solid rgba(165, 42, 42, 0.3);
+            color: #fff;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: rgba(220, 20, 60, 0.3);
+            border-color: rgba(220, 20, 60, 0.5);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            overflow-y: auto;
+            max-height: calc(90vh - 140px);
+        }
+
+        .modal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .modal-image {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            background: rgba(10, 10, 10, 0.5);
+            border: 1px solid rgba(165, 42, 42, 0.2);
+        }
+
+        .modal-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .modal-info h3 {
+            color: #FFB6C1;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-info p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-price {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #90EE90;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-sizes {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .size-badge {
+            background: rgba(165, 42, 42, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(165, 42, 42, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-dialog {
+                width: 95%;
+                margin: 1rem;
+            }
+            
+            .modal-header {
+                padding: 1.5rem;
+            }
+            
+            .modal-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>wrld sneakers</h1>
+                <span class="nav-tagline">Premium Collection</span>
+            </div>
+            <div class="nav-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="totalBrands">0</span>
+                    <span class="stat-label">Брендов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="totalModels">0</span>
+                    <span class="stat-label">Моделей</span>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <button class="faq-icon-btn" id="faqIconBtn" aria-label="FAQ" title="Часто задаваемые вопросы">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </button>
+                <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Screen Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h2>wrld sneakers</h2>
+            <button class="mobile-menu-close" id="mobileMenuClose">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="#hero" class="mobile-menu-link">Главная</a>
+            <a href="#brands" class="mobile-menu-link">Бренды</a>
+            <a href="#contact" class="mobile-menu-link">Контакты</a>
+            <a href="#about" class="mobile-menu-link">О нас</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <p>Премиум коллекция оригинальных кроссовок</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h2 class="hero-title">Эксклюзивная коллекция премиум кроссовок</h2>
+                    <p class="hero-subtitle">Оригинальные модели от ведущих мировых брендов с гарантией качества</p>
+                    <button class="hero-cta" onclick="document.getElementById('searchInput').focus()">Найти кроссовки</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h2 class="hero-title">Новая коллекция Nike 2025</h2>
+                    <p class="hero-subtitle">Самые актуальные модели сезона уже в наличии</p>
+                    <button class="hero-cta" onclick="selectBrandByName('nike')">Смотреть Nike</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h2 class="hero-title">Скидки до 30% на Adidas</h2>
+                    <p class="hero-subtitle">Ограниченное предложение на топовые модели</p>
+                    <button class="hero-cta" onclick="selectBrandByName('adidas')">Смотреть Adidas</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots">
+            <button class="hero-dot active" data-slide="0"></button>
+            <button class="hero-dot" data-slide="1"></button>
+            <button class="hero-dot" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Search & Filter Section -->
+        <section class="search-section">
+            <div class="search-wrapper">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Поиск по моделям кроссовок..."
+                    autocomplete="off"
+                />
+                <button class="search-clear" id="searchClear" style="display: none;">×</button>
+            </div>
+            
+            <div class="filter-group">
+                <label class="filter-label">Сортировка:</label>
+                <select id="sortSelect" class="filter-select">
+                    <option value="default">По умолчанию</option>
+                    <option value="price-asc">Цена: по возрастанию</option>
+                    <option value="price-desc">Цена: по убыванию</option>
+                    <option value="name-asc">Название: А-Я</option>
+                    <option value="name-desc">Название: Я-А</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- Sidebar with Brands -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Бренды</h2>
+                    <button class="reset-filter" id="resetFilter">Сбросить</button>
+                </div>
+                <div id="brandList" class="brand-list"></div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+                <div class="results-header">
+                    <h3 id="resultsTitle">Все модели</h3>
+                    <span class="results-count" id="resultsCount">0 моделей</span>
+                </div>
+                <div id="modelGrid" class="model-grid"></div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <h3>Ничего не найдено</h3>
+                    <p>Попробуйте изменить параметры поиска</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <p class="section-subtitle">Узнайте, что говорят о нас покупатели премиум кроссовок</p>
+            
+            <div class="reviews-slideshow">
+                <div class="review-content active" id="review-1">
+                    <div class="review-text">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <p>"Заказал Nike Air Max и был приятно удивлен качеством! Оригинал, быстрая доставка, отличная упаковка. Теперь только здесь покупаю кроссовки!"</p>
+                        <div class="review-author">
+                            <h4>Арман Жұмабаев</h4>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-content" id="review-2">
+                    <div class="review-text">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <p>"Искала редкие Adidas Yeezy долгое время. Нашла здесь по адекватной цене, все оригинальное. Консультанты помогли с выбором размера. Спасибо!"</p>
+                        <div class="review-author">
+                            <h4>Айгерім Сейтжанова</h4>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-content" id="review-3">
+                    <div class="review-text">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <p>"Впервые покупаю онлайн такие дорогие вещи, но не пожалел! Кроссовки пришли в идеальном состоянии, все документы, бирки на месте. Рекомендую всем!"</p>
+                        <div class="review-author">
+                            <h4>Нұрлан Әбдіғалиев</h4>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-content" id="review-4">
+                    <div class="review-text">
+                        <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                        <p>"Лучший магазин премиум кроссовок! Широкий выбор, конкурентные цены, быстрая обработка заказов. Купил уже третью пару - все идеально!"</p>
+                        <div class="review-author">
+                            <h4>Ерлан Төлепов</h4>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-avatars">
+                <button class="review-avatar active" data-review="review-1" aria-label="Review 1">
+                    <div class="avatar-circle">АЖ</div>
+                    <span class="avatar-name">Арман</span>
+                </button>
+                <button class="review-avatar" data-review="review-2" aria-label="Review 2">
+                    <div class="avatar-circle">АС</div>
+                    <span class="avatar-name">Айгерім</span>
+                </button>
+                <button class="review-avatar" data-review="review-3" aria-label="Review 3">
+                    <div class="avatar-circle">НӘ</div>
+                    <span class="avatar-name">Нұрлан</span>
+                </button>
+                <button class="review-avatar" data-review="review-4" aria-label="Review 4">
+                    <div class="avatar-circle">ЕТ</div>
+                    <span class="avatar-name">Ерлан</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">О наших кроссовках</h2>
+            <p class="section-subtitle">Смотрите видео-обзор нашей коллекции премиум кроссовок</p>
+            
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <div class="video-player" id="videoPlayer">
+                        <iframe
+                            id="youtubeFrame"
+                            src="https://www.youtube.com/embed/lyZYVDYpSi0?enablejsapi=1&rel=0&modestbranding=1"
+                            title="wrld sneakers - Premium Collection"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        <div class="video-overlay" id="videoOverlay">
+                            <button class="video-play-btn" id="videoPlayBtn">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <circle cx="40" cy="40" r="40" fill="rgba(220, 20, 60, 0.9)"/>
+                                    <path d="M32 25L58 40L32 55V25Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Почему важно покупать оригинал</h3>
+                        <p>Узнайте, чем отличаются оригинальные кроссовки от подделок. Не покупайте копии — выбирайте качество, комфорт и долговечность. Только оригинальная обувь гарантирует безопасность и стиль.</p>
+                        <div class="video-stats">
+                            <div class="video-stat">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>49K просмотров</span>
+                            </div>
+                            <div class="video-stat">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                </svg>
+                                <span>98% нравится</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-subtitle">Остались вопросы? Заполните форму и мы свяжемся с вами в ближайшее время</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Ваше имя *</label>
+                        <input type="text" id="contactName" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Телефон *</label>
+                        <input type="tel" id="contactPhone" name="phone" required placeholder="+7 (999) 123-45-67">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email *</label>
+                    <input type="email" id="contactEmail" name="to" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="contactComment">Сообщение</label>
+                    <textarea id="contactComment" name="comment" rows="5" placeholder="Напишите ваш вопрос или комментарий..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">
+                    <span class="submit-text">Отправить сообщение</span>
+                    <span class="submit-loader" style="display: none;">Отправка...</span>
+                </button>
+                <div class="form-message" id="formMessage" style="display: none;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>wrld sneakers</h3>
+                <p>Премиум коллекция оригинальных кроссовок от ведущих мировых брендов</p>
+            </div>
+            <div class="footer-section">
+                <h4>Популярные бренды</h4>
+                <ul id="footerBrands" class="footer-links"></ul>
+            </div>
+            <div class="footer-section">
+                <h4>Информация</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#guarantee">Гарантии</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 wrld sneakers. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2 id="modalTitle">Название модели</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-image">
+                        <img id="modalImg" src="" alt="" style="display: none;">
+                        <div id="modalPlaceholder" class="placeholder" style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; font-size: 3rem;">📷</div>
+                    </div>
+                    <div class="modal-info">
+                        <h3>Цена</h3>
+                        <div class="modal-price" id="modalPrice">$0</div>
+                        
+                        <h3>Описание</h3>
+                        <p id="modalDescription">Описание товара</p>
+                        
+                        <h3>Доступные размеры</h3>
+                        <div class="modal-sizes" id="modalSizes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Modal -->
+    <div class="modal faq-modal" id="faqModal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Часто задаваемые вопросы</h2>
+                <button class="modal-close" id="faqModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="faq-modal-content">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Как проверить подлинность кроссовок?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Все кроссовки в нашем магазине являются оригинальными и сертифицированными. Мы предоставляем гарантию подлинности на каждую пару. При получении заказа вы можете проверить все идентификационные номера и штрих-коды на официальных сайтах производителей.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Какие способы доставки доступны?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Мы предлагаем несколько вариантов доставки: курьерская доставка по городу (1-2 дня), доставка в регионы (3-7 дней), самовывоз из пункта выдачи. Стоимость доставки рассчитывается индивидуально в зависимости от адреса.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Можно ли вернуть или обменять товар?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Да, вы можете вернуть или обменять товар в течение 14 дней с момента получения, если кроссовки не были в использовании и сохранена оригинальная упаковка. Обмен производится бесплатно, возврат средств осуществляется в течение 3-5 рабочих дней.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Какие способы оплаты принимаются?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Мы принимаем оплату банковскими картами (Visa, MasterCard, МИР), электронными кошельками, а также наличными при получении заказа курьером. Все онлайн-платежи защищены современными протоколами безопасности.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Сколько времени занимает доставка?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>По Москве - 1-2 дня, по России - 3-7 дней в зависимости от региона. Экспресс-доставка по Москве доступна в день заказа при оформлении до 14:00.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Есть ли гарантия на товар?</span>
+                                <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Да, на все кроссовки предоставляется гарантия от производителя сроком от 6 до 12 месяцев. Мы также даем собственную гарантию подлинности товара - 100% оригинал или возврат денег.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
