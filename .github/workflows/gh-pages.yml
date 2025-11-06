@@ -17,5 +17,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           publish_branch: gh-pages
-          keep_history: true
-          allow_empty_commit: false
+          force_orphan: false
+          enable_jekyll: false
